@@ -1,0 +1,129 @@
+/* navbar header style */
+header {
+    display: block;
+    padding: 0 10%;
+  }
+  
+  .logo {
+    float: left;
+  }
+  
+  .name {
+    font-weight: bold;
+    line-height: 75px;
+    font-size: 25px;
+  }
+  
+  /* main logo style */
+  .logo img {
+    border-radius: 50%;
+    max-height: 80px;
+  }
+  
+  /* menu button style */
+  .name span{
+    float: right;
+    cursor:pointer;
+  }
+  
+  /* side navbar style */
+  .sidenav {
+    min-height: 100vh;
+    display: grid;
+    /* display: flex */
+    place-content: center;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #01acdb;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+  }
+  
+  .sidenav a {
+    padding: 8px 32px 8px 8px; /* Adjust the padding to move links to the right */
+    text-decoration: none;
+    font-size: 25px;
+    color: #354a54;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+  }
+  
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+  
+  /* side navbar close button style */
+  .sidenav .closebtn {
+    position: absolute;
+    right: 30px;
+    font-size: 70px;
+    cursor:pointer
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav a {font-size: 18px;}
+    .sidenav .logo {font-size: 18px;}
+  }
+  
+  @media screen and (max-width: 600px) {
+    .name {
+        font-size: 22px;
+    }
+    header {
+        padding: 0 7%;
+    }
+  }
+  
+  /* footer section style */
+  
+  .fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 5px 10px 10px;
+    border-radius: 50%;
+  }
+  
+  .fa-twitter {
+    background: #354a54;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #354a54;
+    color: white;
+  }
+  
+  footer {
+    display: grid;
+    margin: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #01acdb;
+  }
+  
+  .footer-links {
+    margin-top: 20px;
+  }
+  .footer-link {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #354a54;
+  }
+  
+  .footer-copyright {
+    margin: 20px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #354a54;
+  }
