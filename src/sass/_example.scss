@@ -29,8 +29,15 @@
 
 .service-wraper{
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  
 }
 
 .service-card{
   width: 300px;
+  border-right: 1px solid black;
+
 }
