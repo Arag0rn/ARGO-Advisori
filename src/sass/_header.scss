@@ -1,15 +1,16 @@
 /* navbar header style */
 header {
-    display: block;
     padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#01acdb;
   }
   
   .logo {
-    float: left;
+   display: flex;
   }
   
   .name {
-    font-weight: bold;
     line-height: 75px;
     font-size: 25px;
   }
@@ -18,7 +19,18 @@ header {
   .logo img {
     border-radius: 50%;
     max-height: 80px;
+
   }
+
+//   .langswitcher {
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none;
+//     padding-right: 30px;
+//     border: 1px solid #ccc;
+// }
+
+
   
   /* menu button style */
   .name span{
@@ -80,26 +92,7 @@ header {
   }
   
   /* footer section style */
-  
-  .fa {
-    padding: 10px;
-    font-size: 15px;
-    width: 15px;
-    text-align: center;
-    text-decoration: none;
-    margin: 20px 5px 10px 10px;
-    border-radius: 50%;
-  }
-  
-  .fa-twitter {
-    background: #354a54;
-    color: white;
-  }
-  
-  .fa-linkedin {
-    background: #354a54;
-    color: white;
-  }
+
   
   footer {
     display: grid;
@@ -126,4 +119,10 @@ header {
     padding-bottom: 10px;
     font-size: 18px;
     color: #354a54;
+  }
+
+  @media screen and (min-width: 1280px) {
+    #openNav{
+      display: none;
+    }
   }
