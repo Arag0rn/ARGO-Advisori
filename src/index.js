@@ -28,6 +28,22 @@ import {transl} from './translation.js';
 
  // observer 
 
+ const ourFocus = document.querySelectorAll(".our-focus-section-wrap");
+
+ const ourFocusObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const focusElement = entry.target;
+      focusElement.classList.add('animate__animated', 'animate__fadeIn');
+    }
+  });
+});
+
+// Передайте каждый элемент с классом "image-wrap" в качестве целевого элемента IntersectionObserver
+ourFocus.forEach((focusElement) => {
+  ourFocusObserver.observe(focusElement);
+});
+ 
  const serviceCards = document.querySelectorAll(".service-card");
 
 const intersectionObserver = new IntersectionObserver((entries) => {
@@ -76,4 +92,7 @@ function changeLanguage() {
 }
 
 changeLanguage ()
+
+
+
 
