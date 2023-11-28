@@ -1,128 +1,66 @@
-/* navbar header style */
-header {
-    padding: 0 10%;
-    display: flex;
-    justify-content: space-between;
-    background-color:#01acdb;
-  }
-  
-  .logo {
-   display: flex;
-  }
-  
-  .name {
-    line-height: 75px;
-    font-size: 25px;
-  }
-  
-  /* main logo style */
-  .logo img {
-    border-radius: 50%;
-    max-height: 80px;
+.header-block{
 
-  }
+}
 
-//   .langswitcher {
-//     -webkit-appearance: none;
-//     -moz-appearance: none;
-//     appearance: none;
-//     padding-right: 30px;
-//     border: 1px solid #ccc;
-// }
-
-
-  
-  /* menu button style */
-  .name span{
-    float: right;
-    cursor:pointer;
-  }
-  
-  /* side navbar style */
-  .sidenav {
-    min-height: 100vh;
-    display: grid;
-    /* display: flex */
-    place-content: center;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #01acdb;
-    overflow-x: hidden;
-    transition: 0.5s;
-    text-align: center;
-  }
-  
-  .sidenav a {
-    padding: 8px 32px 8px 8px; /* Adjust the padding to move links to the right */
-    text-decoration: none;
-    font-size: 25px;
-    color: #354a54;
-    display: block;
-    transition: 0.3s;
-    text-align: center;
-  }
-  
-  .sidenav a:hover{
-    color: #f1f1f1;
-  }
-  
-  /* side navbar close button style */
-  .sidenav .closebtn {
-    position: absolute;
-    right: 30px;
-    font-size: 70px;
-    cursor:pointer
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav a {font-size: 18px;}
-    .sidenav .logo {font-size: 18px;}
-  }
-  
-  @media screen and (max-width: 600px) {
-    .name {
-        font-size: 22px;
-    }
-    header {
-        padding: 0 7%;
+.argo-logo{
+  fill:rgba(255, 255, 255, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.8, 1),
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: #B2D9DA;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px 0px rgba(101, 118, 128, 0.10);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.8, 1);
+  &:hover{
+    background: linear-gradient(196deg, rgba(228, 242, 242, 0.47) 51.61%, #B2D9DA 88.78%);
+    .argo-logo{
+      fill: rgba(100, 117, 127, 1);
     }
   }
-  
-  /* footer section style */
+}
 
-  
-  footer {
-    display: grid;
-    margin: 0;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    background-color: #01acdb;
-  }
-  
-  .footer-links {
-    margin-top: 20px;
-  }
-  .footer-link {
-    font-size: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-decoration: none;
-    color: #354a54;
-  }
-  
-  .footer-copyright {
-    margin: 20px;
-    padding-bottom: 10px;
-    font-size: 18px;
-    color: #354a54;
-  }
 
-  @media screen and (min-width: 1280px) {
-    #openNav{
-      display: none;
-    }
+
+.header-container{
+  margin-top: 41px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.header-list{
+  width: 550px;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 20px 10px;
+}
+
+.header-item {
+  padding: 10px 14px; 
+  background: none;
+  transition: padding 250ms cubic-bezier(0.4, 0, 0.8, 1),
+              background 250ms cubic-bezier(0.4, 0, 0.8, 1),
+              box-shadow 250ms cubic-bezier(0.4, 0, 0.8, 1),
+              border-radius 250ms cubic-bezier(0.4, 0, 0.8, 1);
+  
+  &:hover {
+    padding: 15px 30px;
+    border-radius: 8px;
+    background: linear-gradient(341deg, rgba(178, 217, 218, 0.35) 30.77%, rgba(178, 217, 218, 0.00) 76.23%);
+    box-shadow: 0px 4px 4px 0px #E4F2F2;
   }
+}
+
+.header-link {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+}
