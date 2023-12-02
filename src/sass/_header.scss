@@ -12,12 +12,12 @@
   align-items: center;
   width: 80px;
   height: 80px;
-  background: #B2D9DA;
+  background: $Argo-main;
   border-radius: 50%;
   box-shadow: 0px 4px 4px 0px rgba(101, 118, 128, 0.10);
   transition: background 250ms cubic-bezier(0.4, 0, 0.8, 1);
   &:hover{
-    background: linear-gradient(196deg, rgba(228, 242, 242, 0.47) 51.61%, #B2D9DA 88.78%);
+    background: linear-gradient(196deg, rgba(232, 197, 164, 0.56) 51.61%, #B2D9DA 88.78%);
     .argo-logo{
       fill: rgba(100, 117, 127, 1);
     }
@@ -43,6 +43,7 @@
 .header-item {
   padding: 10px 14px; 
   background: none;
+  border-radius: 8px;
   transition: padding 250ms cubic-bezier(0.4, 0, 0.8, 1),
               background 250ms cubic-bezier(0.4, 0, 0.8, 1),
               box-shadow 250ms cubic-bezier(0.4, 0, 0.8, 1),
@@ -51,7 +52,7 @@
   &:hover {
     padding: 15px 30px;
     border-radius: 8px;
-    background: linear-gradient(341deg, rgba(178, 217, 218, 0.35) 30.77%, rgba(178, 217, 218, 0.00) 76.23%);
+    background:  linear-gradient(341deg, rgba(232, 197, 164, 0.80) 30.77%, rgba(178, 217, 218, 0.80) 76.23%);
     box-shadow: 0px 4px 4px 0px #E4F2F2;
   }
 }
