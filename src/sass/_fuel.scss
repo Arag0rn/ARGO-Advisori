@@ -1,0 +1,89 @@
+.fuel{
+    padding-top: 161px;
+}
+
+.fuel-container{
+    display: flex;
+    gap: 67px;
+}
+
+.fuel-image-box{
+    display: flex;
+    position: relative;
+    width: 575px;
+    justify-content: end;
+}
+
+.wave4{
+    position: absolute;
+    top: 287px;
+    z-index: -1;
+}
+
+.fuel-image1 {
+    width: 224px;
+    height: 244px;
+    border-radius: 22px;
+    background-image: url(../images/fuel-image1.png);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.fuel-image2 {
+    position: absolute;
+    top: 181px; 
+    right: 107px;  
+    width: 468px;
+    height: 312px;
+    border-radius: 22px;
+    background-image: url(../images/fuel-image2.jpg);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.fuel-box{
+    display: flex;
+    flex-direction: column;
+    width: 661px;
+}
+
+.fuel-head {
+    font-size: 50px;
+    font-weight: 700;
+
+}
+
+.fuel-txt{
+    margin-top: 30px;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.fuel-list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 51px;
+}
+
+.fuel-list-item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.fuel-list-txt{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.list-round{
+    width: 25px;
+    height: 25px;
+    background-color: $Argo-main;
+    border-radius: 50%;
+}
