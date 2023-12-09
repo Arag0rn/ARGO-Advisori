@@ -1,30 +1,4 @@
 
-import {transl} from './translation.js';
-
-
-
-
-// gamburger
-
-// document.getElementById("openNav").addEventListener("click", () => {
-//     document.getElementById("mainSideNav").style.width = "100%";
-//   })
-
-//   document.getElementById("closeNav").addEventListener("click", () => {
-//     document.getElementById("mainSideNav").style.width = "0";
-//   })
-
-//   document.getElementById("navbar-link-about").addEventListener("click", () => {
-//     document.getElementById("mainSideNav").style.width = "0";
-//   })
-
-//   document.getElementById("navbar-link-services").addEventListener("click", () => {
-//     document.getElementById("mainSideNav").style.width = "0";
-//   })
-
-//   document.getElementById("copyright").innerHTML = "&copy; " + new Date().getFullYear() + " Argo-Advisory";
-
-
 
  // observer 
 
@@ -39,7 +13,6 @@ import {transl} from './translation.js';
   });
 });
 
-// Передайте каждый элемент с классом "image-wrap" в качестве целевого элемента IntersectionObserver
 ourFocus.forEach((focusElement) => {
   ourFocusObserver.observe(focusElement);
 });
@@ -55,44 +28,46 @@ const intersectionObserver = new IntersectionObserver((entries) => {
   });
 });
 
-// Передайте каждый элемент с классом "service-card" в качестве целевых элементов IntersectionObserver
 serviceCards.forEach((card) => {
   intersectionObserver.observe(card);
 });
 
-//langswitcher
 
-const langSel = document.querySelector('select');
-const allLang = ['en', 'de'];
+const serviseCardTxt = document.querySelectorAll(".card-text");
+const ReadMore = document.querySelectorAll(".readMore");
+
+ReadMore.forEach((button, index) => {
+  let isOpen = false;
+
+  button.addEventListener("click", () => {
+    if (isOpen) {
+      serviseCardTxt[index].style.minHeight = "113px";
+      button.textContent = "Read more";
+    } else {
+
+      serviseCardTxt[index].style.minHeight = "300px";
+      button.textContent = "Read less";
+    }
+
+    isOpen = !isOpen;
+  })
+});
+
+// swiper 
 
 
-langSel.addEventListener('change', onChangeUrlLanguage);
-
-function onChangeUrlLanguage() {
-  let lang = langSel.value;
-  location.href = window.location.pathname + '#' + lang;
-  location.reload();
-}
-
-function changeLanguage() {
-  let hash = window.location.hash;
-  hash = hash.substring(1);
-  console.log(hash);
-  if (!allLang.includes(hash)){
-    location.href = window.location.pathname + '#en';
-    location.reload();
+// init Swiper:
+const swiper = new Swiper(".swiper", {
+  direction: "horizontal",
+  spaceBetween: 370,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".button-prev"
   }
-  langSel.value = hash;
-  for (let key in transl){
-    let elem = document.querySelector('.lng-' + key);
-    if(elem) {
-    elem.textContent = transl[key][hash]
-  }
-  }
-}
-
-changeLanguage ()
-
+});
 
 
 

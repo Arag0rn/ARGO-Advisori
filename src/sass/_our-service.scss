@@ -1,0 +1,57 @@
+.our-service{
+    padding-top: 182px;
+}
+
+.our-service-head{
+    max-width: 504px;
+    font-size: 50px;
+    font-weight: 700;
+    
+}
+
+.service-wraper{
+    margin-top: 83px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 35px;
+}
+
+.service-card{
+    display: flex;
+    width: 310px;
+    min-height: 430px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+    flex-shrink: 0;
+}
+
+.card-head{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.card-text{
+    font-size: 20px;
+    font-weight: 400;
+    height: 113px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.readMore{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.service-svg {
+    width: 43px;
+    height: 43px;
+  }
+
+.readMore-box{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
