@@ -1,2 +1,0 @@
-document.querySelectorAll('[data-hystmodal^="#myModal"]').forEach((function(e){e.addEventListener("click",(function(t){t.preventDefault();var o=e.getAttribute("data-hystmodal");document.querySelector(o).style.display="block"}))}));document.querySelectorAll(".close").forEach((function(e){e.addEventListener("click",(function(){e.closest(".modal").style.display="none"}))})),window.onclick=function(e){document.querySelectorAll(".modal").forEach((function(t){e.target==t&&(t.style.display="none")}))};
-//# sourceMappingURL=index.e9f31848.js.map
