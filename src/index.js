@@ -59,9 +59,10 @@ ReadMore.forEach((button, index) => {
 // init Swiper:
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
-  spaceBetween: 370,
-  slidesPerView: 4,
+  spaceBetween: 40,
+  slidesPerView: 3.5,
   freeMode: true,
+  loop: true,
   watchSlidesProgress: true,
   navigation: {
     nextEl: ".button-next",
