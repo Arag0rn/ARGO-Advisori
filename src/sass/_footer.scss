@@ -1,0 +1,84 @@
+footer{
+    padding-top: 29px;
+    padding-bottom: 29px;
+    background-color: $Argo-main;
+}
+
+.footer-container{
+    padding-right: 36px;
+    padding-left: 36px;
+}
+.foter-box{
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.foter-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #B2D9DA;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px 0px rgba(101, 118, 128, 0.10);
+    transition: background 250ms cubic-bezier(0.4, 0, 0.8, 1);
+    &:hover{
+    background: linear-gradient(196deg, rgba(232, 197, 164, 0.56) 51.61%, #B2D9DA 88.78%);
+    .argo-logo{
+      fill: rgba(100, 117, 127, 1);
+    }
+  }
+}
+
+.foter-box{
+    margin: 0 auto;
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-head{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 140%; 
+}
+
+.footer-subhead{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 140%; 
+}
+.social-box{
+    display: flex;
+    gap: 6px;   
+}
+
+.icon-twiter, .icon-linkedin{
+    fill: #b2d9da;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.8, 1);
+    
+    }
+
+.social-link{
+
+    &:hover{
+    .icon-twiter, .icon-linkedin{
+        fill: #E8C5A4;;
+    
+    }
+    }
+}
+
+.footer-txt{
+    width: 351px;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
