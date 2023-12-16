@@ -3,6 +3,9 @@ $Argo-main: #0D7680;
 
 
 @mixin main-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 23px 20px;
     width: 227px;
     height: 66px;
