@@ -1,0 +1,69 @@
+.statementofPurpose{
+    margin-top: 296px;
+}
+
+.purpose-container{
+    display: flex;
+    gap: 135px;
+}
+
+.purpose-left-box{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.purpose-img1 {
+    align-self: end;
+    width: 330px;
+    height: 225px;
+    border-radius: 22px;
+    background-image: url(../images/purpose/purpose1.jpg);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.purpose-img2 {
+    position: relative;
+    width: 397px;
+    height: 247px;
+    border-radius: 22px;
+    background-image: url(../images/purpose/purpose2.jpg);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.purpose-wave{
+   position: absolute;
+   bottom: 50%;
+   left: -4px;
+   z-index: -1;
+}
+
+.purpose-right-box{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    max-width: 597px;
+}
+
+.purpose-head{
+    color: #000;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.purpose-txt{
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.purpose-txt2{
+    margin-top: 18px;
+}
