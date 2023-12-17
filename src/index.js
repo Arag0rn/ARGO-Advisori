@@ -1,6 +1,52 @@
 
 
- // observer 
+ // observer and animation
+
+ const journey = document.querySelectorAll(".journey-container");
+
+ const journeyObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const focusElement = entry.target;
+      focusElement.classList.add('animate__animated', 'animate__slideInLeft');
+    }
+  });
+});
+
+journey.forEach((focusElement) => {
+  journeyObserver.observe(focusElement);
+});
+
+const fuel = document.querySelectorAll(".fuel-container");
+
+const fuelObserver = new IntersectionObserver((entries) => {
+ entries.forEach((entry) => {
+   if (entry.isIntersecting) {
+     const focusElement = entry.target;
+     focusElement.classList.add('animate__animated', 'animate__slideInLeft');
+   }
+ });
+});
+
+fuel.forEach((focusElement) => {
+  fuelObserver.observe(focusElement);
+});
+
+const resourses = document.querySelectorAll(".resourses-container");
+
+const resoursesObserver = new IntersectionObserver((entries) => {
+ entries.forEach((entry) => {
+   if (entry.isIntersecting) {
+     const focusElement = entry.target;
+     focusElement.classList.add('animate__animated', 'animate__backInRight');
+   }
+ });
+});
+
+resourses.forEach((focusElement) => {
+  resoursesObserver.observe(focusElement);
+});
+ 
 
  const ourFocus = document.querySelectorAll(".our-focus-section-wrap");
 
