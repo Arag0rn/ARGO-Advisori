@@ -43,11 +43,11 @@
 </symbol>
 
 <symbol id="icon-left" viewBox="0 0 18 32">
-<path fill="none" stroke="#0d7680" style="stroke: var(--color1, #0d7680)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M15.8 2.7l-13.3 13.3 13.3 13.3"></path>
+<path fill="none"   stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M15.8 2.7l-13.3 13.3 13.3 13.3"></path>
 </symbol>
 
 <symbol id="icon-right" viewBox="0 0 18 32">
-<path fill="none" stroke="#0d7680" style="stroke: var(--color1, #0d7680)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M2.2 2.7l13.3 13.3-13.3 13.3"></path>
+<path fill="none"   stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M2.2 2.7l13.3 13.3-13.3 13.3"></path>
 </symbol>
 
 <symbol id="icon-linkedin" viewBox="0 0 32 32">

@@ -4,23 +4,22 @@
 }
 .journey-container{
     display: flex;
-    gap: 54px;
+    gap: 96px;
 }
 
 .journey-image-box{
     position: relative;
-    margin-top: 246px;
-    width: 750px;
+    width: 638px;
+    display: flex;
+    flex-direction: column;
 }
 
 .journey-image {
-    position: absolute;
-    bottom: 87%;
-    left: 340px;
+    align-self: end;
     width: 373px;
     height: 249px;
     border-radius: 22px;
-    background-image: url(../images/journey-img.png);
+    background-image: url(../images/journey-img.jpg);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
     background-size: cover;
     background-position-x: center;
@@ -30,12 +29,11 @@
 .wave3 {
     position: absolute;
     bottom: 217px;
-    right: 75px;
+    left: 0;
 }
 
 .journey-video{
     position: relative;
-    margin-left: 15px;
     width: 462px;
     height: 354px;
     border-radius: 22px;
@@ -52,7 +50,7 @@
   }
   
   .journey-box{
-    width: 508px;
+    width: 542px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
