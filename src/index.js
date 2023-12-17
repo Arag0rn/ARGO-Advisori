@@ -124,6 +124,18 @@ var form = document.getElementById("my-form");
 async function handleSubmit(event) {
   event.preventDefault();
   var status = document.getElementById("my-form-status");
+  for (var i = 0; i < form.elements.length; i++) {
+          var field = form.elements[i];
+  if (field.value.trim() === '') {
+              field.setAttribute('required', 'required');
+              status.innerHTML = 'Oops! There was a problem submitting your form. Please fill in all required fields.';
+              return false;
+          } else {
+              field.removeAttribute('required');
+          }
+        }
+  // validateForm();
+  
   var data = new FormData(event.target);
   fetch(event.target.action, {
     method: form.method,
@@ -149,3 +161,49 @@ async function handleSubmit(event) {
   });
 }
 form.addEventListener("submit", handleSubmit)
+
+document.addEventListener("DOMContentLoaded", function() {
+  var textarea = document.getElementById("message");
+
+  textarea.addEventListener("click", function() {
+    this.setSelectionRange(0, 0);
+  });
+});
+
+// validation
+
+// function validateForm() {
+//   let myForm = document.getElementById('my-form');
+//   let myFormStatus = document.getElementById('formStatus');
+//   myForm.innerHTML = '';
+
+//   // Проход по всем полям и установка атрибута required
+//   for (var i = 0; i < myForm.elements.length; i++) {
+//       var field = myForm.elements[i];
+
+//       if (field.value.trim() === '') {
+//           field.setAttribute('required', 'required');
+//           myFormStatus.innerHTML = 'Oops! There was a problem submitting your form. Please fill in all required fields.';
+//           return false;
+//       } else {
+//           field.removeAttribute('required');
+//       }
+
+//       if (field.hasAttribute('minlength') && field.value.length < parseInt(field.getAttribute('minlength'))) {
+//         myFormStatus.innerHTML = 'Oops! There was a problem submitting your form. ' + field.name + ' should contain at least ' + field.getAttribute('minlength') + ' characters.';
+//           return false;
+//       }
+
+//       if (field.hasAttribute('maxlength') && field.value.length > parseInt(field.getAttribute('maxlength'))) {
+//         myFormStatus.innerHTML = 'Oops! There was a problem submitting your form. ' + field.name + ' should contain no more than ' + field.getAttribute('maxlength') + ' characters.';
+//           return false;
+//       }
+
+//       // Устанавливаем placeholder в сообщение об ошибке
+//       field.setAttribute('placeholder', 'Oops! There was a problem submitting your form. ' + field.name + ' should contain at least ' + field.getAttribute('minlength') + ' characters.');
+//   }
+
+//   // Если все валидации прошли успешно, форма будет отправлена
+//   myForm.innerHTML = 'Your form has been submitted successfully!';
+//   return true;
+// }

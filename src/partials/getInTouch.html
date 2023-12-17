@@ -35,20 +35,22 @@
     <div class="getInTouch-rightBox">
 
         <h3 class="right-box-head">Send Us a Message</h3>
-
-        <form class="getInTouch-form" id="my-form" action="https://formspree.io/f/mjvnbkwb" method="POST">
-            <label for="">Full Name*</label>
-            <input type="text"  id="name" name="name" required>
-            <label for="">What’s the name of your company*</label>
-            <input type="text"  id="company-name" name="company-name">
-            <label for="">Email*</label>
-            <input type="text" id="email" name="email" required>
-            <label for="">Phone Number*</label>
-            <input type="text" id="phone" name="phone" required>
-            <label for="">Message*</label>
-            <textarea type="text"  id="message" name="message" required>
+        <form class="getInTouch-form" id="my-form" action="https://formspree.io/f/mjvnbkwb" method="POST" >
+            <label for="name">Full Name*</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" minlength="3" maxlength="20" >
             
-
+            <label for="company-name">What’s the name of your company*</label>
+            <input type="text" id="company-name" name="company-name" placeholder="John Doe Company" minlength="5" maxlength="20" >
+            
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" placeholder="johndoe@example.com" minlength="3" maxlength="20">
+            
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" placeholder="+49123456789" minlength="5" maxlength="20" >
+            
+            <label for="message">Message*</label>
+            <textarea id="message" name="message" ></textarea>
+        
             <button class="getInTouch-btn" type="submit">Send</button>
             <p class="form-status" id="my-form-status"></p>
         </form>
