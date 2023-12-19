@@ -4,7 +4,7 @@ const journey = document.querySelectorAll(".journey-container");
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       const focusElement = entry.target;
-      focusElement.classList.add('animate__animated', 'animate__slideInLeft');
+      focusElement.classList.add('animate__animated', 'animate__slideInLeft', 'animate__medium');
     }
   });
 });
@@ -19,7 +19,7 @@ const fuelObserver = new IntersectionObserver((entries) => {
  entries.forEach((entry) => {
    if (entry.isIntersecting) {
      const focusElement = entry.target;
-     focusElement.classList.add('animate__animated', 'animate__slideInLeft');
+     focusElement.classList.add('animate__animated', 'animate__slideInLeft', 'animate__medium');
    }
  });
 });
@@ -34,7 +34,7 @@ const resoursesObserver = new IntersectionObserver((entries) => {
  entries.forEach((entry) => {
    if (entry.isIntersecting) {
      const focusElement = entry.target;
-     focusElement.classList.add('animate__animated', 'animate__backInRight');
+     focusElement.classList.add('animate__animated', 'animate__backInRight', 'animate__medium');
    }
  });
 });
@@ -50,7 +50,7 @@ resourses.forEach((focusElement) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       const focusElement = entry.target;
-      focusElement.classList.add('animate__animated', 'animate__fadeIn');
+      focusElement.classList.add('animate__animated', 'animate__fadeIn', 'animate__medium');
     }
   });
 });
@@ -65,7 +65,7 @@ const intersectionObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       const card = entry.target;
-      card.classList.add('animate__animated', 'animate__fadeInRight');
+      card.classList.add('animate__animated', 'animate__fadeInRight', 'animate__medium');
     }
   });
 });
