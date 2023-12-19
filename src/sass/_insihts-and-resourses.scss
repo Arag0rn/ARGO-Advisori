@@ -1,0 +1,72 @@
+.insihts-and-resourses{
+    padding-top: 193px;
+}
+
+.resourses-list-left-box{
+    width: 605px;
+    display: flex;
+    flex-direction: column;
+}
+
+.resourses-list-left-box-head{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.resourses-list-left-box-txt{
+    margin-top: 19px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.resourses-list-left-btn{
+    margin-top: 50px;
+    @include main-btn;
+ 
+}
+
+.resourses-list{
+    margin-top: 149px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 41px;
+    justify-content: center;
+    padding-bottom: 307px;
+}
+
+.resourses-list-box{
+    display: flex;
+    gap: 142px;
+}
+
+.resourses-image-wraper{
+    position: relative;
+    margin-top: 174px;
+    width: 436px;
+    height: 291px;
+    border-radius: 22px;
+    background-image: url(../images/insihts.jpg);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.resourses-wave1{
+    position: absolute;
+    right: 0;
+    top: 44%;
+    z-index: -2;
+}
+
+.resourses-wave2{
+    position: absolute;
+    bottom: 60%;
+    z-index: -1;
+}
+
+.resourses-list-head{
+    margin-top: 189px;
+    font-size: 50px;
+    font-weight: 700;
+}
