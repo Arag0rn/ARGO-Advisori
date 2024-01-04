@@ -36,7 +36,8 @@
     font-weight: 400;
     height: 113px;
     overflow: hidden;
-    cursor: pointer;
+    transition: height 0.3s ease;
+
 }
 
 .readMore{

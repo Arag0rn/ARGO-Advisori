@@ -9,11 +9,11 @@ ReadMore.forEach((button, index) => {
       serviseCardTxt[index].style.height = "113px";
       button.textContent = "Read more";
     } else {
-
-      serviseCardTxt[index].style.height  = "auto";
+      serviseCardTxt[index].style.height = "auto";
       button.textContent = "Read less";
     }
 
     isOpen = !isOpen;
   })
 });
+

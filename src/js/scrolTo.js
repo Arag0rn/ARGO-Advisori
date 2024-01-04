@@ -1,6 +1,6 @@
 function scrollToSection(event) {
   event.preventDefault();
-  const targetHref = this.getAttribute('href');
+  const targetHref = "index.html";
   const targetElement = document.querySelector(targetHref);
 
   if (targetElement) {
