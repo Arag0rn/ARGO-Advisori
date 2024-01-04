@@ -1,17 +1,24 @@
-function scrollToSection(sectionId) {
-    var section = document.getElementById(sectionId);
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-    }
+function scrollToSection(event) {
+  event.preventDefault();
+  const targetHref = this.getAttribute('href');
+  const targetElement = document.querySelector(targetHref);
+
+  if (targetElement) {
+      window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+      });
   }
-  
+}
+
   const journeyBtn = document.querySelector(".journey-btn");
-  
-  const onGetInTouchClick = () => {
-    scrollToSection('getInTouch')
-  }
-  
-  
-  journeyBtn.addEventListener("click", onGetInTouchClick);
-  
-  
+
+  journeyBtn.addEventListener("click", scrollToSection);
+
+  const links = document.querySelectorAll('.header-link');
+
+  links.forEach(link => {
+        link.addEventListener('click', scrollToSection);
+    });
+
+
