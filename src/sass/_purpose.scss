@@ -1,5 +1,6 @@
 .statementofPurpose{
     margin-top: 296px;
+    position: relative;
 }
 
 .purpose-container{
@@ -8,12 +9,19 @@
 }
 
 .purpose-left-box{
-    width: 550px;
-    display: flex;
-    flex-direction: column;
-}
+    @media screen and (min-width: 836px) {
+        display: none;
+    }
+    @media screen and (min-width: 1444px) {
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+    }
+   
 
 .purpose-img1 {
+    
     align-self: end;
     width: 330px;
     height: 225px;
@@ -39,11 +47,44 @@
 }
 
 .purpose-wave{
+    
    position: absolute;
    bottom: 50%;
    left: -4px;
    z-index: -1;
 }
+
+.purpose-wave2{
+    @media screen and (min-width: 836px) {
+        position: absolute;
+        top: -240px;
+        right: 0;
+        z-index: -1;
+        width: 482px;
+        height: 217px;
+        transform: rotateY(180deg);
+    }
+    @media screen and (min-width: 1444px) {
+        display: none;
+     
+    }
+ }
+
+ .purpose-wave3{
+    @media screen and (min-width: 836px) {
+        position: absolute;
+        bottom: -240px;
+        left: 0;
+        z-index: -1;
+        width: 482px;
+        height: 217px;
+
+    }
+    @media screen and (min-width: 1444px) {
+        display: none;
+     
+    }
+ }
 
 .purpose-right-box{
     display: flex;
