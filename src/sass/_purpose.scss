@@ -9,8 +9,9 @@
 }
 
 .purpose-left-box{
-    @media screen and (min-width: 836px) {
+    @media screen and (min-width: 370px) {
         display: none;
+
     }
     @media screen and (min-width: 1444px) {
         width: 550px;
@@ -55,14 +56,19 @@
 }
 
 .purpose-wave2{
-    @media screen and (min-width: 836px) {
+    @media screen and (min-width: 370px) {
         position: absolute;
         top: -240px;
         right: 0;
         z-index: -1;
-        width: 482px;
+        width: 450px;
         height: 217px;
         transform: rotateY(180deg);
+
+    }
+    @media screen and (min-width: 836px) {
+        width: 482px;
+      
     }
     @media screen and (min-width: 1444px) {
         display: none;
@@ -71,11 +77,15 @@
  }
 
  .purpose-wave3{
-    @media screen and (min-width: 836px) {
+    @media screen and (min-width: 370px) {
         position: absolute;
         bottom: -240px;
         left: 0;
         z-index: -1;
+        width:400px;
+        height: 217px;
+    }
+    @media screen and (min-width: 836px) {
         width: 482px;
         height: 217px;
 

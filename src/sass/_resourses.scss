@@ -1,4 +1,8 @@
 .resourses{
+    @media screen and (min-width: 370px) {
+        padding-top: 100px;
+       }
+
     @media screen and (min-width: 836px) {
         padding-top: 170px;
        }
@@ -17,7 +21,7 @@
     justify-content: end;
 }
 .resourses-btn{
-    @media screen and (min-width: 836px) {
+    @media screen and (min-width: 370px) {
         margin-top: 83px;
         display: flex;
         width: 227px;
@@ -39,6 +43,9 @@
             cursor: pointer;
         }
        }
+       
+
+  
        @media screen and (min-width: 1444px) {
         margin-top: 0;
        }

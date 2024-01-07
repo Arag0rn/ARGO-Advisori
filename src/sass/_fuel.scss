@@ -8,9 +8,10 @@
 }
 
 .fuel-image-box{
-    @media screen and (min-width: 836px) {
+    @media screen and (min-width: 370px) {
         display: none;
        }
+
        @media screen and (min-width: 1444px) {
            display: flex;
             justify-content: flex-end;
@@ -58,7 +59,7 @@
 }
 
 .fuel-head {
-    font-size: 50px;
+    font-size: 49px;
     font-weight: 700;
 
 }
