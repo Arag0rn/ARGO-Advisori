@@ -1,12 +1,17 @@
 .insihts-and-resourses{
+    @media screen and (min-width: 370px) {
+        padding-top: 70px;
+    }
     padding-top: 193px;
 }
 
 .resourses-list-left-box{
+ 
+
     @media screen and (min-width: 836px) {
         width: 359px;
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
     @media screen and (min-width: 1444px) {
       width: 605px; 
@@ -15,6 +20,10 @@
 }
 
 .resourses-list-left-box-head{
+    @media screen and (min-width: 370px) {
+        font-size: 50px;
+        font-weight: 700;
+    }
     @media screen and (min-width: 836px) {
 
         font-size: 50px;
@@ -27,14 +36,17 @@
 }
 
 .resourses-list-left-box-txt{
-    @media screen and (min-width: 836px) {
+    @media screen and (min-width: 370px) {
+        width: 310px;
         margin-top: 19px;
         font-size: 20px;
         font-weight: 400;
-      
+    }
+    @media screen and (min-width: 836px) {
+        width: 359px;
     }
     @media screen and (min-width: 1444px) {
- 
+        width: 605px;
     }
 
 }
@@ -96,6 +108,9 @@
 }
 
 .resourses-wave1{
+    @media screen and (min-width: 370px) {      
+    display: none;
+  }
     @media screen and (min-width: 836px) {
             
             position: absolute;
@@ -113,7 +128,9 @@
 }
 
 .resourses-wave2{
-
+    @media screen and (min-width: 370px) {      
+        display: none;
+    }
     @media screen and (min-width: 836px) {
         position: absolute;
         width: 342px;

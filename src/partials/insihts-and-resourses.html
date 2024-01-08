@@ -16,34 +16,61 @@
   
 
 <header>
-    <div class="header-block">
-      <div class="container header-container">
+  <div class="header-block">
+    <div class="container header-container">
+      
+    <a class="logo-svg" href="../index.html" aria-label="link on main book page">
+          <div class="logo">
+          <svg class="argo-logo"        
+            width="47"
+            height="47"><use href="../images/icons.svg#icon-Logo"></use>
+           </svg> 
         
-      <a class="logo-svg" href="../index.html" aria-label="link on main book page">
-            <div class="logo">
-            <svg class="argo-logo"        
-              width="47"
-              height="47"><use href="../images/icons.svg#icon-Logo"></use>
-             </svg> 
-          
-        </div>
-      </a>
-        <ul class="header-list">
-          <li class="header-item">
-            <a class="header-link link" href="#">Services</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="#">Resources</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="#">About</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div> 
+      </div>
+    </a>
+      <ul class="header-list">
+        <li class="header-item">
+          <a class="header-link link" href="../index.html#our-service">Services</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link link" href="../index.html#resourses">Resources</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link link" href="../index.html#aboutUs">About</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link link" href="../index.html#getInTouch">Contact</a>
+        </li>
+      </ul>
+
+      <div class="hamburger-menu js-open-menu" openMenuBtn>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+
     </div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+            
+      <button class="toggle-menu-close-round js-close-menu" closeMenuBtn>
+          <svg class="toggle-menu-close-point" >
+          <use href="../images/icons.svg#icon-close"></use>
+      </svg>
+      </button>
+
+      <ul class="toggleMenu">
+          <li class="toggleMenu-item"><a class="header_item link" href="../index.html#our-service">Services</a></li>
+          <li class="toggleMenu-item"><a class="header_item link" href="../index.html#resourses">Resources</a></li>
+          <li class="toggleMenu-item"><a class="header_item link" href="../index.html#aboutUs">About</a></li>
+          <li class="toggleMenu-item"><a class="header_item link" href="../index.html#getInTouch">Contact</a></li>
+      </ul>
+
+  </div>
+
+    </div>
+  </div>
+
+</header>
 
 <main>
   <section class="insihts-and-resourses">
@@ -192,47 +219,56 @@
 </section>
 </main>
     
-<footer>
-    <div class="container footer-container">
-      <div class="foter-box">
-              <a class="logo-svg" href="../index.html" aria-label="link on main book page">
-                <div class="foter-logo">
-                <svg class="argo-logo"        
-                  width="47"
-                  height="47"><use href="../images/icons.svg#icon-Logo"></use>
-                </svg> 
-              
-                </div>
-              </a>
-  
-              <h2 class="footer-head">Argo Advisory</h2>
-  
-              <h3 class="footer-subhead">Follow us</h3>
-  
-              <div class="social-box">
-                <a class="social-link" href="https://twitter.com/Argo_advisory">
-                  <svg class="icon-twiter"        
-                  width="40"
-                  height="40"><use href="../images/icons.svg#icon-twiter"></use>
-                  </svg>
-                </a>
-  
-                <a class="social-link" href="https://www.linkedin.com/company/argo-advis3rs">
-                  <svg class="icon-linkedin"        
-                  width="40"
-                  height="40"><use href="../images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </div>
-              
-              <p class="footer-txt">Unlock the value of your business
-                Set sail for success us</p>
 
-      </div>
+<footer>
+  <div class="footer-border">
+  <div class="container footer-container">
+    <div class="foter-box">
+            <div class="footer-logo-box">
+            <a class="logo-svg" href="../index.html" aria-label="link on main book page">
+              <div class="foter-logo">
+              <svg class="argo-logo footer-logo"        
+               ><use href="../images/icons.svg#icon-Logo"></use>
+              </svg> 
+            
+              </div>
+            </a>
+
+            <h2 class="footer-head">Argo Advisory</h2>
+</div>
+            
+<div class="social-and-txt">
+            <div class="social-box">
+              <h3 class="footer-subhead">Follow us</h3>
+              <a class="social-link" href="https://twitter.com/Argo_advisory">
+                <svg class="icon-twiter"        
+                width="40"
+                height="40"><use href="../images/icons.svg#icon-twiter"></use>
+                </svg>
+              </a>
+
+              <a class="social-link" href="https://www.linkedin.com/company/argo-advis3rs">
+                <svg class="icon-linkedin"        
+                width="40"
+                height="40"><use href="../images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+            
+            <p class="footer-txt">Unlock the value of your business<br>
+              Set sail for success</p>
+
+</div>             
+
+
     </div>
-    </footer>
+  </div>
+</div>
+  </footer>
+
 
     <script type="module" src="../resourses.js"></script> 
+    <script type="module" src="../js/mobile-menu.js"></script> 
   
 </body>
     </html>
