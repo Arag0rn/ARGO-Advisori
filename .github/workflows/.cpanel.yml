@@ -1,0 +1,5 @@
+---
+    deployment:
+      tasks:
+        - export DEPLOYPATH=/home/argouyjj/public_html/argo-advisory.com/
+        - /bin/cp -R argo-advisory.com/* $DEPLOYPATH
