@@ -1,5 +1,17 @@
----
-    deployment:
-      tasks:
-        - export DEPLOYPATH=/home/argouyjj/public_html/argo-advisory.com/
-        - /bin/cp -R argo-advisory.com/* $DEPLOYPATH
+on:
+    push:
+      branches:
+        - main
+  
+jobs:
+    build:
+      runs-on: ubuntu-latest
+  
+      steps:
+        - name: Checkout repository
+          uses: actions/checkout@v2 
+          
+        - name: Deploy to server
+          run: |
+            export DEPLOYPATH=/home/argouyjj/public_html/argo-advisory.com/
+            /bin/cp -R argo-advisory.com/* $DEPLOYPATH
