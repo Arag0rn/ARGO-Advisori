@@ -199,3 +199,12 @@
         fill:  #FCD0B1;
     }
 }
+
+.insihts-and-resourses-card{
+    @media screen and (max-width: 836px) {
+       margin-top: 40px;
+       &:last-child{
+        margin-bottom: 40px;
+       }
+    }
+}
