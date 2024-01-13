@@ -1,35 +1,84 @@
 .getInTouch{
-    padding-top: 181px;
-    padding-bottom: 210px;
+    @media screen and (min-width: 370px) {
+        padding-top: 370px;
+    }
+    @media screen and (min-width: 836px) {
+        padding-top: 404px;
+    }
+    @media screen and (min-width: 1444px) {
+        padding-top: 181px;
+        padding-bottom: 210px;
+    }
+
 }
   
 
 .getInTouch-container{
-    display: flex;
-    gap: 210px;
+
+    @media screen and (min-width: 836px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (min-width: 1444px) {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 210px;
+    }
+   
 }
 
 .getInTouch-leftBox{
-    display: flex;
-    flex-direction: column;
+    @media screen and (min-width: 836px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (min-width: 1444px) {
+        display: flex;
+        align-items: start;
+    }
+
 }
 
 .getInTouch-head{
-    font-family: Readex Pro;
-    font-size: 50px;
-    font-weight: 700;
+    @media screen and (min-width: 370px) {
+        text-align: center;
+        font-family: Readex Pro;
+        font-size: 50px;
+        font-weight: 700;
+    }
+   
 }
 
 .getInTouch-subhead{
-    width: 388px;
-    font-size: 20px;
-    font-weight: 400;
+    @media screen and (min-width: 370px) {
+        margin: 0 auto;
+        margin-top: 35px;
+        width: 253px;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+    }
+    @media screen and (min-width: 836px) {
+        margin-top: 35px;
+        width: 388px;
+        text-align: start;
+      
+    }
+    @media screen and (min-width: 1444px) {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
 
 }
 
 .contact-box{
-    display: flex;
-    width: 522px;
+    @media screen and (min-width: 370px) {
+     display: flex;
+    width: 350px;
     margin-top: 35px;
     padding: 36px 0px 36px 36px;
     flex-direction: column;
@@ -38,6 +87,12 @@
     border-radius: 22px;
     background: $Argo-main;
     box-shadow: 0px 4px 4px 0px rgba(14, 119, 128, 0.20);
+    }
+
+    @media screen and (min-width: 836px) {
+        width: 522px;
+    }
+
 }
 
 .contact-box-head{
@@ -71,6 +126,13 @@
     }
 }
 
+.email-link2{
+    @media screen and (max-width: 836px) {
+        width: 228px;
+    }
+
+}
+
 .address-link{
     display: flex;
     flex-direction: column;
@@ -78,15 +140,37 @@
 }
 
 .getInTouch-rightBox{
-    display: flex;
-    flex-direction: column;
-    width: 414px;
+    @media screen and (min-width: 370px) {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    @media screen and (min-width: 836px) {
+        margin-top: 71px;
+        width: 414px;
+    }
+    @media screen and (min-width: 1444px) {
+        margin-top: 0;
+    }
+    
 }
 
 .right-box-head{
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 140%; 
+
+    @media screen and (min-width: 370px) {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 140%; 
+    }
+    @media screen and (min-width: 836px) {
+   
+    }
+    @media screen and (min-width: 1444px) {
+        text-align: start;
+    }
+  
 }
 
 label{
@@ -135,8 +219,19 @@ textarea{
 }
 
 .getInTouch-btn{
-    @include main-btn;
-    margin-top: 35px;
+    @media screen and (min-width: 370px) {
+        @include main-btn;
+        margin-top: 35px;
+        margin: 0 auto;
+        margin-top: 45px;
+    }
+    @media screen and (min-width: 836px) {
+    
+    }
+    @media screen and (min-width: 1444px) {
+        margin-left: 0;
+    }
+   
 }
 
 .form-status{

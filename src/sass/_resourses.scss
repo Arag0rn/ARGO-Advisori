@@ -1,5 +1,15 @@
 .resourses{
-    padding-top: 315px;
+    @media screen and (min-width: 370px) {
+        padding-top: 100px;
+       }
+
+    @media screen and (min-width: 836px) {
+        padding-top: 170px;
+       }
+       @media screen and (min-width: 1444px) {
+            padding-top: 315px;
+       }
+   
     
 }
 
@@ -11,34 +21,49 @@
     justify-content: end;
 }
 .resourses-btn{
-    display: flex;
-    width: 227px;
-    height: 66px;
-    padding: 10px 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 39px;
-    border: 1px solid $Argo-main;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    background: white;
-    color: $Argo-main;
-    font-size: 20px;
-    font-weight: 300;
-    transition: background 250ms cubic-bezier(0.4, 0, 0.8, 1);
-    &:hover{
-        background: var(--champaing-pink, #E8C5A4);
-        cursor: pointer;
-    }
+    @media screen and (min-width: 370px) {
+        margin-top: 83px;
+        display: flex;
+        width: 227px;
+        height: 66px;
+        padding: 10px 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 39px;
+        border: 1px solid $Argo-main;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        background: white;
+        color: $Argo-main;
+        font-size: 20px;
+        font-weight: 300;
+        transition: background 250ms cubic-bezier(0.4, 0, 0.8, 1);
+        &:hover{
+            background: var(--champaing-pink, #E8C5A4);
+            cursor: pointer;
+        }
+       }
+       
+
+  
+       @media screen and (min-width: 1444px) {
+        margin-top: 0;
+       }
 
 }
 .swiper{
     margin-top: 35px;
 }
 .swiper-action{
-    margin-top: 135px;
-    display: flex;
-    justify-content: flex-end;
+    @media screen and (min-width: 836px) {
+        margin-top: 60px;
+        display: flex;
+        justify-content: flex-end;
+       }
+       @media screen and (min-width: 1444px) {
+        margin-top: 135px;
+       }
+
 }
 
 .swiper-buttons{
@@ -135,15 +160,28 @@
 
 .resourses-readMore-box{
     margin-top: 21px;
+    cursor: default;
 }
 
-.resourses-readMore{
-    color:$Argo-main;
-}
+
 
 .resourses-service-arrow{
     stroke: $Argo-main;
     fill: $Argo-main;
+}
+
+.resourses-readMore{
+    color:$Argo-main;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.8, 1);
+    &:hover{
+        color: #FCD0B1;
+        cursor: pointer;
+    }
+}   
+
+.resourses-readMore:hover .service-arrow {
+    stroke: #FCD0B1;
+    fill: #FCD0B1;
 }
 
 .swiper {
@@ -153,9 +191,22 @@
 
 
 .swiper-slide-visible{
-  filter: blur(4px);
+    @media screen and (min-width: 836px) {
+  
+       }
+       @media screen and (min-width: 1444px) {
+        filter: blur(4px);
+       }
+  
 }
 
 .swiper-slide-fully-visible{
-    filter: none;
+    @media screen and (min-width: 836px) {
+  
+    }
+    @media screen and (min-width: 1444px) {
+        filter: none;
+    }
+
+    
 }

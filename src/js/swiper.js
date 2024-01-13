@@ -8,5 +8,21 @@ const swiper = new Swiper(".swiper", {
     navigation: {
       nextEl: ".button-next",
       prevEl: ".button-prev"
+    },
+    breakpoints: {
+      370: {
+        slidesPerView: 1,
+
+      },
+      836: {
+        slidesPerView: 2,
+        spaceBetween: 37
+      },
+      1444: {
+        slidesPerView: 3.6,
+        spaceBetween: 37
+      },
+
     }
   });
+

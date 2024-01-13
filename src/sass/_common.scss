@@ -12,9 +12,26 @@ body {
   }
 
   .container{
-    margin: 0 auto;
-    padding: 0;
-    max-width: 1280px;
+    @media screen and (min-width: 370px) {
+      max-width: 350px;
+      margin: 0 auto;
+      padding: 0;
+    
+    }  
+  
+   
+    @media screen and (min-width: 836px) {
+      max-width: 672px;
+      margin: 0 auto;
+      padding: 0;
+    
+    }  
+    @media screen and (min-width: 1444px) {
+      margin: 0 auto;
+      padding: 0;
+      max-width: 1280px;
+    
+    }
 }
 
 .animate__medium {

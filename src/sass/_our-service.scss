@@ -3,8 +3,16 @@
 }
 
 .our-service-head{
-    font-size: 50px;
-    font-weight: 700;
+    @media screen and (min-width: 370px) {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+       }
+
+       @media screen and (min-width: 1444px) {
+        font-size: 50px;
+       }
+ 
     
 }
 
@@ -17,13 +25,18 @@
 }
 
 .service-card{
-    display: flex;
-    width: 298px;
-    min-height: 430px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 11px;
-    flex-shrink: 0;
+    @media screen and (min-width: 370px) {
+        display: flex;
+        width: 298px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 11px;
+        flex-shrink: 0;
+       }
+       @media screen and (min-width: 1444px) {
+        min-height: 430px;
+       }
+ 
 }
 
 .card-head{
@@ -36,7 +49,8 @@
     font-weight: 400;
     height: 113px;
     overflow: hidden;
-    cursor: pointer;
+    transition: height 0.3s ease;
+
 }
 
 .readMore{
@@ -54,4 +68,9 @@
     display: flex;
     gap: 5px;
     align-items: center;
+}
+
+.service-arrow{
+    stroke:  currentColor;
+    fill:  currentColor;
 }
