@@ -189,3 +189,13 @@
     clip-path: inset(50%);
     margin: -1px;
 }
+
+.back-btn{
+    transform: rotateY(180deg);
+    width: 40px;
+    height: 40px;
+    &:hover{
+        stroke:  #FCD0B1;
+        fill:  #FCD0B1;
+    }
+}

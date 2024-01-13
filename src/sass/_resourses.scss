@@ -160,15 +160,28 @@
 
 .resourses-readMore-box{
     margin-top: 21px;
+    cursor: default;
 }
 
-.resourses-readMore{
-    color:$Argo-main;
-}
+
 
 .resourses-service-arrow{
     stroke: $Argo-main;
     fill: $Argo-main;
+}
+
+.resourses-readMore{
+    color:$Argo-main;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.8, 1);
+    &:hover{
+        color: #FCD0B1;
+        cursor: pointer;
+    }
+}   
+
+.resourses-readMore:hover .service-arrow {
+    stroke: #FCD0B1;
+    fill: #FCD0B1;
 }
 
 .swiper {
