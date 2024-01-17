@@ -10,7 +10,7 @@ resoursesBtn.addEventListener("click", function(event) {
 
 document.addEventListener('DOMContentLoaded', function () {
   const readMoreBoxes = document.querySelectorAll('.resourses-readMore-box');
-  const articlesList = document.querySelectorAll('.articles-list-item');
+
 
 
   readMoreBoxes.forEach(box => {
