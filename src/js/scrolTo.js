@@ -1,6 +1,6 @@
 function scrollToSection(event) {
   event.preventDefault();
-  const targetHref = event.target.getAttribute('href'); // Получаем значение атрибута href
+  const targetHref = event.target.getAttribute('href'); 
   const targetElement = document.querySelector(targetHref);
 
   if (targetElement) {
@@ -8,6 +8,10 @@ function scrollToSection(event) {
       top: targetElement.offsetTop,
       behavior: 'smooth'
     });
+
+
+    const newPath = window.location.pathname.replace('/index.html', '');
+    history.replaceState({}, '', newPath);
   }
 }
 

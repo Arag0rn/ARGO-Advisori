@@ -1,5 +1,14 @@
 .our-service{
-    padding-top: 182px;
+    @media screen and (min-width: 370px) {
+        padding-top: 218px;
+       }
+       @media screen and (min-width: 836px) {
+  
+      padding-top: 182px;
+    }
+
+
+    
 }
 
 .our-service-head{

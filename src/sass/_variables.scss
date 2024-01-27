@@ -4,36 +4,25 @@ $Argo-main: #0D7680;
 
 @mixin main-btn {
 
-
-  @media screen and (min-width: 370px) {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 153px;
-    height: 46px;
-    padding: 23px 30px;
+    width: 227px;
+    height: 66px;
     gap: 10px;
     border-radius: 39px;
     background-color: $Argo-main;
     border: none;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: #FFF;
-    font-size: 15px;
-    font-style: normal;
+    font-size: 25px;
     font-weight: 400;
-    line-height: normal;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.8, 1);
     &:hover{
       background-color: var(--champaing-pink, #E8C5A4);
     }
-}
 
- @media screen and (min-width: 1444px) {
-    padding: 23px 20px;
-    width: 227px;
-    height: 66px;
-    font-size: 20px;
-  }
+
   }
 
   .animate__medium {

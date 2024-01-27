@@ -119,6 +119,8 @@
             right: 0;
             top: 44%;
             z-index: -2;
+            transform: rotate3d(0, 0, 10, 180deg);
+
       }
       @media screen and (min-width: 1444px) {
             width: 536px;
@@ -199,6 +201,7 @@
         stroke:  #FCD0B1;
         fill:  #FCD0B1;
     }
+    cursor: pointer;
 }
 
 .insihts-and-resourses-card{

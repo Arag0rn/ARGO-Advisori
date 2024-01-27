@@ -1,5 +1,14 @@
 .journey{
-    padding-top: 252px;
+    @media screen and (min-width: 370px) {
+        padding-top: 279px;
+    }
+    @media screen and (min-width: 836px) {
+            padding-top: 0;
+        }
+   
+    @media screen and (min-width: 1444px) {
+         padding-top: 186px;
+    }
     
 }
 .journey-container{
@@ -44,22 +53,39 @@
         width: 399px;
         height: 178px;
         position: absolute;
-        bottom: -700px;
+        top: 560px;
         left: -70px;
        }
        @media screen and (min-width: 836px) {
         bottom: 52%;
         left: -70px;
+        display: none;
         }
 
        @media screen and (min-width: 1444px) {
+        display: block;
         width: 638px;
         height: 421px;
-        bottom: 217px;
+        top: -110px;
         left: 0;
        }
       
 
+}
+
+.joyrney-wave{
+    @media screen and (min-width: 370px) {
+    position: absolute;
+    top: -232px;
+    left: calc(50% + 10px);
+    width: 363px;
+    height: 210px;
+    transform: rotate3d(0, 0, 10, 180deg);
+    }
+    @media screen and (min-width: 836px) {
+        display: none;
+        }
+    
 }
 
 .journey-video {
@@ -130,7 +156,7 @@
     margin-top: 33px;
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
 }
 
