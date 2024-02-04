@@ -1,11 +1,15 @@
 const mobileMenu = document.querySelector('.js-menu-container');
-const openMenuBtn = document.querySelector('.js-open-menu');
-const closeMenuBtn = document.querySelector('.js-close-menu');
+const openMenuBtn = document.querySelectorAll('.js-open-menu');
+const closeMenuBtn = document.querySelectorAll('.js-close-menu');
+console.log(openMenuBtn);
 
-const toggleMenu = () => {
+
+const toggleMenu = (btn) => {
+  console.log(btn);
+
   const isMenuOpen =
-    openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-  openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+  btn.getAttribute('aria-expanded') === 'true' || false;
+  btn.setAttribute('aria-expanded', !isMenuOpen);
   mobileMenu.classList.toggle('is-open');
 
   if (isMenuOpen) {
@@ -16,16 +20,26 @@ const toggleMenu = () => {
   }
 };
 
-const scrollToSection = (sectionId) => {
-  const section = document.querySelector(sectionId);
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
-    toggleMenu();
-  }
-};
+// const scrollToSection = (sectionId) => {
+//   const section = document.querySelector(sectionId);
+//   if (section) {
+//     section.scrollIntoView({ behavior: 'smooth' });
+//     toggleMenu();
+//   }
+// };
 
-openMenuBtn.addEventListener('click', toggleMenu);
-closeMenuBtn.addEventListener('click', toggleMenu);
+
+openMenuBtn.forEach((btn) => {
+btn.addEventListener('click', ()=> toggleMenu(btn));
+})
+
+
+
+closeMenuBtn.forEach(btn => {
+  btn.addEventListener('click', ()=> toggleMenu(btn));
+})
+
+
 
 document.querySelectorAll('.toggleMenu-item a').forEach((link) => {
   link.addEventListener('click', (event) => {

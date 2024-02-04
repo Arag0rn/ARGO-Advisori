@@ -115,7 +115,7 @@ footer{
 
 .footer-subhead{
     @media screen and (min-width: 370px) {
-     color: #FFF;
+        color: #FFF;
         font-size: 15px;
         font-weight: 700;
         line-height: 140%; 
@@ -137,13 +137,29 @@ footer{
       
     } 
     @media screen and (min-width: 836px) {
-        
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 6px;   
       }
-      
-
     
 }
+    .footer-legal{
+        @media screen and (min-width: 370px) {
+            margin-top: 10px;
+            color: #FFF;
+            font-size: 10px;
+            font-weight: 300;
+            line-height: 140%; 
+            text-align: center;
+          
+        } 
+        @media screen and (min-width: 836px) {
+            margin-bottom: 10px;
+       
+          
+        } 
+      
+    }   
 
 .icon-twiter, .icon-linkedin{
     @media screen and (min-width: 370px) {
