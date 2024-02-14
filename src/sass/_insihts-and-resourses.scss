@@ -194,12 +194,10 @@
 }
 
 .back-btn{
-    transform: rotateY(180deg);
     width: 40px;
     height: 40px;
     &:hover{
-        stroke:  #FCD0B1;
-        fill:  #FCD0B1;
+     transform: scale(105%);
     }
     cursor: pointer;
 }
