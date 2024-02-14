@@ -1,6 +1,9 @@
 import data from '../articles.json';
+import dataHead from '../articlesHead.json';
 
-console.log(data);
+const listOfResourses = document.querySelector(".resourses-list");
+
+console.log(listOfResourses);
 
 
 function createArticleHTML(data) {
@@ -98,4 +101,22 @@ if (article) {
   newArticle.scrollIntoView({ behavior: 'smooth' });
 }
 
+dataHead.forEach((resource) => {
+  listOfResourses.insertAdjacentHTML('beforeend', `
+    <li class="resoursed-card insihts-and-resourses-card" data-article-id="${resource['data-article-id']}">
+      <div class="resourses-img-block"></div>
+      <div class="resourses-txt-block">
+        <h3 class="resourses-txt-block-head">${resource['resourses-head']}</h3>
+        <p class="resourses-txt-block-txt">${resource['resourses-txt']}</p>
+        <div class="readMore-box resourses-readMore-box">
+          <div class="readMore resourses-readMore">Read more</div>
+          <svg class="service-arrow resourses-service-arrow" width="20px" height="20px">
+            <use href="./images/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </div>
+      </div>
+    </li>`);
 
+  const imgBlock = listOfResourses.lastElementChild.querySelector(".resourses-img-block");
+  imgBlock.style.backgroundImage = `linear-gradient(254deg, rgba(232, 197, 164, 0.40) 7.31%, rgba(14, 119, 128, 0.40) 88.36%), url(${resource['image']})`;
+});
