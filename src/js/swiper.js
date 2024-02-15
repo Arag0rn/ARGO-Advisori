@@ -1,7 +1,6 @@
 import dataHead from '../../articlesHead.json';
 const swiperWrapper = document.querySelector(".swiper-wrapper");
-console.log(dataHead);
-console.log(swiperWrapper);
+
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   spaceBetween: 37,
