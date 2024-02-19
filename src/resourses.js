@@ -1,5 +1,14 @@
-import data from '../articles.json';
-import dataHead from '../articlesHead.json';
+import data from '/articles.json';
+import axios from 'axios';
+
+let dataHead;
+
+fetch('articlesHead.json')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error fetching JSON:', error));
+
+
 
 const listOfResourses = document.querySelector(".resourses-list");
 
@@ -101,25 +110,30 @@ if (article) {
   newArticle.scrollIntoView({ behavior: 'smooth' });
 }
 
-dataHead.forEach((resource) => {
-  listOfResourses.insertAdjacentHTML('beforeend', `
-    <li class="resoursed-card insihts-and-resourses-card" data-article-id="${resource['articleId']}">
-      <div class="resourses-img-block"></div>
-      <div class="resourses-txt-block">
-        <h3 class="resourses-txt-block-head">${resource['resourses-head']}</h3>
-        <p class="resourses-txt-block-txt">${resource['resourses-txt']}</p>
-        <div class="readMore-box resourses-readMore-box">
-          <div class="readMore resourses-readMore">Read more</div>
-          <svg class="resourses-service-arrow service-arrow" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-  <use href="#icon-arrow-right"></use>
-  <symbol id="icon-arrow-right" viewBox="0 0 28 32">
-    <path d="M24.401 17.015l-7.826 8.609c-0.245 0.27-0.577 0.421-0.924 0.421s-0.679-0.151-0.924-0.421c-0.245-0.27-0.383-0.635-0.383-1.016s0.138-0.747 0.383-1.016l5.599-6.156h-15.978c-0.346 0-0.678-0.151-0.922-0.42s-0.382-0.634-0.382-1.015c0-0.381 0.137-0.745 0.382-1.015s0.576-0.42 0.922-0.42h15.978l-5.597-6.16c-0.245-0.27-0.383-0.635-0.383-1.016s0.138-0.747 0.383-1.016c0.245-0.27 0.577-0.421 0.924-0.421s0.679 0.151 0.924 0.421l7.826 8.609c0.122 0.133 0.218 0.292 0.284 0.467s0.099 0.362 0.099 0.551c-0 0.189-0.034 0.376-0.1 0.551s-0.163 0.333-0.285 0.466z"></path>
-  </symbol>
-</svg>
-        </div>
-      </div>
-    </li>`);
 
-  const imgBlock = listOfResourses.lastElementChild.querySelector(".resourses-img-block");
-  imgBlock.style.backgroundImage = `linear-gradient(254deg, rgba(232, 197, 164, 0.40) 7.31%, rgba(14, 119, 128, 0.40) 88.36%), url(${resource['image']})`;
-});
+console.log(dataHead);
+
+// dataHead.forEach((resource) => {
+//   listOfResourses.insertAdjacentHTML('beforeend', `
+//     <li class="resoursed-card insihts-and-resourses-card" data-article-id="${resource['articleId']}">
+//       <div class="resourses-img-block"></div>
+//       <div class="resourses-txt-block">
+//         <h3 class="resourses-txt-block-head">${resource['resourses-head']}</h3>
+//         <p class="resourses-txt-block-txt">${resource['resourses-txt']}</p>
+//         <div class="readMore-box resourses-readMore-box">
+//           <div class="readMore resourses-readMore">Read more</div>
+//           <svg class="resourses-service-arrow service-arrow" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+//   <use href="#icon-arrow-right"></use>
+//   <symbol id="icon-arrow-right" viewBox="0 0 28 32">
+//     <path d="M24.401 17.015l-7.826 8.609c-0.245 0.27-0.577 0.421-0.924 0.421s-0.679-0.151-0.924-0.421c-0.245-0.27-0.383-0.635-0.383-1.016s0.138-0.747 0.383-1.016l5.599-6.156h-15.978c-0.346 0-0.678-0.151-0.922-0.42s-0.382-0.634-0.382-1.015c0-0.381 0.137-0.745 0.382-1.015s0.576-0.42 0.922-0.42h15.978l-5.597-6.16c-0.245-0.27-0.383-0.635-0.383-1.016s0.138-0.747 0.383-1.016c0.245-0.27 0.577-0.421 0.924-0.421s0.679 0.151 0.924 0.421l7.826 8.609c0.122 0.133 0.218 0.292 0.284 0.467s0.099 0.362 0.099 0.551c-0 0.189-0.034 0.376-0.1 0.551s-0.163 0.333-0.285 0.466z"></path>
+//   </symbol>
+// </svg>
+//         </div>
+//       </div>
+//     </li>`);
+
+//   const imgBlock = listOfResourses.lastElementChild.querySelector(".resourses-img-block");
+//   imgBlock.style.backgroundImage = `linear-gradient(254deg, rgba(232, 197, 164, 0.40) 7.31%, rgba(14, 119, 128, 0.40) 88.36%), url(${resource['image']})`;
+// });
+
+

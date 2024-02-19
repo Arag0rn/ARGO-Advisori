@@ -1,4 +1,4 @@
-import dataHead from '../../articlesHead.json';
+import dataHead from '/articlesHead.json';
 const swiperWrapper = document.querySelector(".swiper-wrapper");
 
 const swiper = new Swiper(".swiper", {
@@ -55,6 +55,12 @@ document.querySelectorAll('.swiper-slide').forEach((slide) => {
 swiper.on('slideChangeTransitionStart', function () {
   userClicked = false;
 });
+
+fetch('../../articlesHead.json')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error fetching JSON:', error));
+
 
 dataHead.forEach((resource) => {
   swiperWrapper.innerHTML += `

@@ -34,5 +34,11 @@
           "resourses-head": "Ramen Profitable",
           "resourses-txt": "Now that the term \"ramen profitable\" has become widespread, I ought to explain precisely what the idea entails...",
           "image": "https://res.cloudinary.com/drkjdderc/image/upload/v1707905321/res6_bxkngq.jpg"
+    },
+    {
+      "articleId": "7",
+          "resourses-head": "Test 2",
+          "resourses-txt": "Now that the term \"ramen profitable\" has become widespread, I ought to explain precisely what the idea entails...",
+          "image": "https://res.cloudinary.com/drkjdderc/image/upload/v1707905321/res6_bxkngq.jpg"
     }
   ]
